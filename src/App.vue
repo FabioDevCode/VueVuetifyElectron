@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+    <v-app id="inspire">
     <v-navigation-drawer
       v-model="drawer"
       app
@@ -48,7 +48,9 @@
       <router-view></router-view>
     </v-main>
   </v-app>
-</template>
+</template>>
+
+</templ>
 
 <script>
   export default {
@@ -56,9 +58,11 @@
       drawer: null,
       items: [
         { title: 'Dashboard', icon: 'mdi-view-dashboard', to: '/' },
-        { title: 'Clients', icon: 'mdi-domain', to: '/clients' },
+        { title: 'Clients Entreprises', icon: 'mdi-domain', to: '/clients' },
+        { title: 'Clients Particuliers', icon: 'mdi-account', to: '' },
         { title: 'Contacts', icon: 'mdi-account-multiple', to: '/contacts' },
-        { title: 'Facture', icon: 'mdi-file-document', to: '/facture' },
+        { title: 'Factures', icon: 'mdi-file-document', to: '/facture' },
+        { title: 'Réglages', icon: 'mdi-cog-outline', to: '' },
       ],
     }),
   }
